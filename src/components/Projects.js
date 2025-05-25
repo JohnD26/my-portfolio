@@ -3,7 +3,6 @@ import { ProjectCard } from "./Card";
 import projImg1 from "../assets/images/project-img1.png";
 import projImg2 from "../assets/images/project-img2.png";
 import projImg3 from "../assets/images/project-img3.png";
-import colorSharp2 from "../assets/images/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
