@@ -4,6 +4,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../assets/images/logo.svg'
+import navIcon1 from '../assets/images/Icon1.svg'
+import navIcon2 from '../assets/images/Icon2.svg'
+import navIcon3 from '../assets/images/Icon3.svg'
+
 
 export const NavBar=() => {
   const [activeLink, setActiveLink]= useState('home');
@@ -51,9 +56,9 @@ const onUpdateActiveLink = (value) => {
           </Nav>
           <span className= "navbar-text">
             <div className = "social-icon">
-              <a href= "#"><img src={} alt= ""/> </a>
-              <a href= "#"><img src={} alt= ""/> </a>
-              <a href= "#"><img src={} alt= ""/> </a>
+              <a href= "#"><img src={navIcon1} alt= ""/> </a>
+              <a href= "#"><img src={navIcon2} alt= ""/> </a>
+              <a href= "#"><img src={navIcon3} alt= ""/> </a>
             </div>
             <button className= "vvd" onClick= {() => console.log('connect')}> <span>Let's connect </span> </button>
           </span>
