@@ -15,6 +15,8 @@ import Icon3 from '../assets/images/Icon3.svg'
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 export const NavBar = () => {
 
