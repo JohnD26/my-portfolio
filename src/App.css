@@ -106,3 +106,23 @@ h1, h2, h3, h4, h5, h6 {
 .App-logo {
   display: none !important;
 }
+
+.navbar .social-icon,
+.footer .social-icon {
+  display: none !important;
+}
+
+
+.navbar .navbar-brand img {
+  display: none !important;
+}
+
+
+.footer img[alt="Logo"] {
+  display: none !important;
+}
+
+
+.App-logo {
+  display: none !important;
+}
