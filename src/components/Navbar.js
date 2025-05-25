@@ -39,7 +39,7 @@ const onUpdateActiveLink = (value) => {
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <img src={''} alt= "Logo" />
+        <img src={logo} alt= "Logo" />
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" > 
         
