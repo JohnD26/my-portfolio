@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,8 +8,30 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export const NavBar=() => {
   const [activeLink, setActiveLink]= useState('home');
   const [scrolled, setScrolled]= useState(false);
+
+useEffect( () =>{
+const onScroll = ( ) => {
+  if (window.scrollY >50){
+    setScrolled(true);
+  } else {
+    setScrolled(false);
+  }
+}
+
+window.addEventListener("scroll", onScroll);
+return () => window.removeEventListener("scroll", onScroll);
+
+}, []
+
+)
+
+const onUpdateActiveLink = (value) => {
+  setActiveLink(value);
+}
+
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <img src={''} alt= "Logo" />
@@ -20,7 +42,10 @@ export const NavBar=() => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home" className={activeLink == 'home' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink == 'skills' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('hskills')} >Skills</Nav.Link>
+            <Nav.Link href="#projects" className={activeLink == 'projects' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('projects')} >Projects</Nav.Link>
+            <Nav.Link href="#home" className={activeLink == 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
             <Nav.Link href="#link">Skills</Nav.Link>
             <Nav.Link href="#link">Projects</Nav.Link>
           </Nav>
