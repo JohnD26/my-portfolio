@@ -126,3 +126,43 @@ h1, h2, h3, h4, h5, h6 {
 .App-logo {
   display: none !important;
 }
+
+
+
+/* PROJECT CARDS */
+.proj-imgbx {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  /* enforce a consistent aspect ratio: 4:3 here, adjust as you like */
+  aspect-ratio: 4 / 3;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* crop / fill the box without distortion */
+  display: block;
+}
+
+.proj-imgbx:hover {
+  transform: scale(1.03);
+}
+
+.proj-txtx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.proj-imgbx:hover .proj-txtx {
+  opacity: 1;
+}
