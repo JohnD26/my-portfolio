@@ -309,8 +309,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Contact image */
 :root {
-  /* new vars for the Contact section */
-  --contact-bg:    #fafafa;  /* very light grey */
+  /*  the Contact section */
+  --contact-bg:   #ffe4f4;  /* very light pink */
   --contact-text:  #222222;  /* dark charcoal */
   --input-border:  #cccccc;  /* light border */
 }
