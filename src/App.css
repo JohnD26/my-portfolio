@@ -211,3 +211,93 @@ section.contact {
   background: #ff6333;
 }
 
+
+
+
+/* ───────────────────────────────────────────────────────────
+   Colour palette
+───────────────────────────────────────────────────────────── */
+:root {
+  /* backgrounds */
+  --bg-primary:       #0f0f0f;
+  --bg-secondary:     #1a1a1a;
+  /* text */
+  --text-primary:     #ffffff;
+  --text-secondary:   #bbbbbb;
+  /* accent */
+  --accent:           #E94E77;
+  --accent-hover:     #D43C66;
+}
+
+body {
+  background-color: var(--bg-primary) !important;
+  color:            var(--text-primary) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+/* Muted text (used in taglines, paragraphs) */
+.banner .tagline,
+.banner p,
+.project p {
+  color: var(--text-secondary);
+}
+
+/* Buttons & links */
+.btn-primary,
+.vvd {
+  background-color: var(--accent);
+  border-color:     var(--accent);
+  color:            var(--text-primary);
+  transition:       background 0.2s ease;
+}
+
+.btn-primary:hover,
+.vvd:hover {
+  background-color: var(--accent-hover);
+  border-color:     var(--accent-hover);
+}
+
+/* Navbar links */
+.navbar .navbar-link {
+  color: var(--text-secondary);
+}
+
+.navbar .navbar-link.active,
+.navbar .navbar-link:hover {
+  color:            var(--text-primary);
+}
+
+/* Forms */
+.contact-form .form-control {
+  background-color: var(--bg-secondary);
+  border:           1px solid #333;
+  color:            var(--text-primary);
+}
+
+.contact-form .btn-primary {
+  background-color: var(--accent);
+}
+
+.contact-form .btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Project cards */
+.proj-imgbx {
+  background-color: var(--bg-secondary);
+  box-shadow:       0 4px 12px rgba(233,78,119,0.4);
+}
+
+.proj-txtx {
+  background: rgba(0,0,0,0.6);
+  color:      var(--text-primary);
+}
+
+/* Contact image */
+.contact-image img {
+  border-radius: 8px;
+  box-shadow:    0 4px 12px rgba(0,0,0,0.5);
+}
