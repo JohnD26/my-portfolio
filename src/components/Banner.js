@@ -77,40 +77,43 @@
 
 
 
-// src/components/Banner.js
-import { useState, useEffect } from "react";
-import { useLocation } from 'react-router-dom';         // ← new import
+
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-  const location = useLocation();                        // ← track current route
   
-  // If we're not on the home path, render nothing
-  if (location.pathname !== "/") return null;
+  const location = useLocation();
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Learning Web Design", "Learning UI/UX Design", "AI Engineer" ];
+
+  const toRotate = [
+    "Learning Web Design",
+    "Learning UI/UX Design",
+    "AI Engineer"
+  ];
   const period = 2000;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text]);
+    return () => clearInterval(ticker);
+  }, [text, delta]);  
 
   const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
@@ -124,7 +127,7 @@ export const Banner = () => {
       setIsDeleting(true);
       setIndex(prev => prev - 1);
       setDelta(period);
-    } else if (isDeleting && updatedText === '') {
+    } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
@@ -133,6 +136,12 @@ export const Banner = () => {
       setIndex(prev => prev + 1);
     }
   };
+
+  
+  if (location.pathname !== "/") {
+    return null;
+  }
+
 
   return (
     <section className="banner" id="home">
@@ -162,7 +171,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>
               }
             </TrackVisibility>
