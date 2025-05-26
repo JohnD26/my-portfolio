@@ -97,9 +97,9 @@ export const Banner = () => {
   const [index, setIndex]           = useState(1);
 
   const toRotate = [
-    "Learning Web Design",
-    "Learning UI/UX Design",
-    "AI Engineer"
+    "Web Design",
+    "UI/UX Design",
+    "AI Engineer on the side"
   ];
   const period = 2000;
 
@@ -154,7 +154,7 @@ export const Banner = () => {
                   <span className="tagline">Bienvenue sur mon portfolio</span>
                   
                   <h1>
-                    {`Salut ! Je m'appelle Jonathan`}{" "}
+                    {`Salut ! Je m'appelle Jonathan japrend le `}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -165,7 +165,7 @@ export const Banner = () => {
                   </h1>
                   
                   <p>
-                    Je suis étudiant à l’Université d’Ottawa et je suis en train d’apprendre le design d’interfaces utilisateur.
+                    Je suis étudiant en Data Science à l’Université d’Ottawa et je suis en train d’apprendre le design d’interfaces utilisateur.
                     Ce portfolio est une vitrine de mon parcours dans ce cours. J'explore HTML, CSS, Bootstrap, et les bases de la
                     communication visuelle à travers plusieurs projets pratiques.
                   </p>
