@@ -166,3 +166,47 @@ h1, h2, h3, h4, h5, h6 {
 .proj-imgbx:hover .proj-txtx {
   opacity: 1;
 }
+
+
+
+/* */
+/* ---------- CONTACT SECTION ---------- */
+section.contact {
+  padding: 60px 0;
+}
+
+.contact-image {
+  text-align: center;
+  /* limit how big that SVG can grow */
+}
+.contact-image img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact-form {
+  /* center the form and cap its width */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form .form-control {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.contact-form .btn-primary {
+  background: #ff7f50;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background: #ff6333;
+}
