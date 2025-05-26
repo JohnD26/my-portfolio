@@ -143,6 +143,43 @@ export const Banner = () => {
   }
 
   // 3. display
+//   return (
+//     <section className="banner" id="home">
+//       <Container>
+//         <Row className="aligh-items-center">
+//           <Col xs={12} md={6} xl={7}>
+//             <TrackVisibility>
+//               {({ isVisible }) =>
+//                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+//                   <span className="tagline">Welcome to my Portfolio</span>
+//                   <h1>
+//                     {`Hi! I'm Jonathan`}{" "}
+//                     <span
+//                       className="txt-rotate"
+//                       dataPeriod="1000"
+//                       data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+//                     >
+//                       <span className="wrap">{text}</span>
+//                     </span>
+//                   </h1>
+//                   <p>I'm new to web Design/UI Conception and learning it for a course</p>
+//                 </div>
+//               }
+//             </TrackVisibility>
+//           </Col>
+//           <Col xs={12} md={6} xl={5}>
+//             <TrackVisibility>
+//               {({ isVisible }) =>
+//                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+//                   <img src={headerImg} alt="Header Img" />
+//                 </div>
+//               }
+//             </TrackVisibility>
+//           </Col>
+//         </Row>
+//       </Container>
+//     </section>
+//   );
   return (
     <section className="banner" id="home">
       <Container>
@@ -151,9 +188,11 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  
+                  <span className="tagline">Bienvenue sur mon portfolio</span>
+                  
                   <h1>
-                    {`Hi! I'm Jonathan`}{" "}
+                    {`Salut ! Je m'appelle Jonathan`}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -162,16 +201,29 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <p>I'm new to web Design/UI Conception and learning it for a course</p>
+                  
+                  <p>
+                    Je suis étudiant à l’Université d’Ottawa et je suis en train d’apprendre le design d’interfaces utilisateur.
+                    Ce portfolio est une vitrine de mon parcours dans ce cours. J'explore HTML, CSS, Bootstrap, et les bases de la
+                    communication visuelle à travers plusieurs projets pratiques.
+                  </p>
+
+                  <p>
+                    Vous trouverez ici quatre liens vers des projets de design à venir, chacun représentant un type différent de site :
+                    services, jeux, commerce électronique, et analyse/visualisation. Ces pages contiennent des descriptions
+                    provisoires et seront enrichies au fil du semestre.
+                  </p>
+
                 </div>
               }
             </TrackVisibility>
           </Col>
+
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt="Illustration d’en-tête" />
                 </div>
               }
             </TrackVisibility>
