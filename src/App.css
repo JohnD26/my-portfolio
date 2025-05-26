@@ -210,3 +210,10 @@ section.contact {
 .contact-form .btn-primary:hover {
   background: #ff6333;
 }
+
+
+/* hide the   Contact sectiongit a */
+section.contact,
+#connect {
+  display: none !important;
+}
