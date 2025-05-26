@@ -3,6 +3,7 @@ import { ProjectCard } from "./Card";
 import projImg1 from "../assets/images/project-img1.png";
 import projImg2 from "../assets/images/project-img2.png";
 import projImg3 from "../assets/images/project-img3.png";
+import projImg4 from "../assets/images/project-img4.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -10,34 +11,24 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "Design 1: Chez le coiffeur",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      title: "Design2: Jeu de Poker",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Design3:Big Bucks",
+      description: "Un site de e-commerce",
       imgUrl: projImg3,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+        {
+      title: "Design4: Lock In",
+      description: "Un site d'analyse et visualization pour les match de Football",
+      imgUrl: projImg4,
     },
   ];
 
