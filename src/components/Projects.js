@@ -115,7 +115,7 @@ export const Projects = () => {
     },
     {
       title: 'Design 2 : Jeu de Poker',
-      description: 'Design & Development',
+      description: 'Emmenez beaucoup d argent!',
       imgUrl: projImg2,
       path: '/design2',
     },
