@@ -78,22 +78,23 @@
 
 
 
+ 
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
-  
-  const location = useLocation();
+  // 1. call hooks first:
+  const { pathname } = useLocation();
 
-  const [loopNum, setLoopNum] = useState(0);
+  const [loopNum, setLoopNum]       = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const [text, setText]             = useState("");
+  const [delta, setDelta]           = useState(300 - Math.random() * 100);
+  const [index, setIndex]           = useState(1);
 
   const toRotate = [
     "Learning Web Design",
@@ -106,9 +107,8 @@ export const Banner = () => {
     const ticker = setInterval(() => {
       tick();
     }, delta);
-
     return () => clearInterval(ticker);
-  }, [text, delta]);  
+  }, [text, delta]); //  so timing stays correct
 
   const tick = () => {
     const i = loopNum % toRotate.length;
@@ -137,12 +137,12 @@ export const Banner = () => {
     }
   };
 
-  
-  if (location.pathname !== "/") {
+  // 2. Tskip rendering:
+  if (pathname.startsWith("/design")) {
     return null;
   }
 
-
+  // 3. display
   return (
     <section className="banner" id="home">
       <Container>
@@ -181,3 +181,4 @@ export const Banner = () => {
     </section>
   );
 };
+
