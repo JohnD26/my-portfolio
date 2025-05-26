@@ -338,8 +338,12 @@ section.contact p {
 /* Button ensure text is legible */
 .contact-form .btn-primary {
   background-color: var(--accent);
-  color:            #fff;
+  color:            #ffe4f4;
   border:           none;
+}
+
+.contact-image {
+  background-color: #ffe4f4 !important;
 }
 
 .contact-form .btn-primary:hover {
