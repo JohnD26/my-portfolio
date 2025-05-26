@@ -109,7 +109,7 @@ export const Projects = () => {
   const projects = [
     {
       title: 'Design 1 : Chez le coiffeur',
-      description: 'Design & Development',
+      description: 'Pour un ptit relooking!',
       imgUrl: projImg1,
       path: '/design1',
     },
@@ -142,7 +142,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
                   <h2>Projects</h2>
-                  <p>Here are a few projects I worked on!</p>
+                  <p>Voici quelques projets prévus pour ce semestre!</p>
 
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center">
