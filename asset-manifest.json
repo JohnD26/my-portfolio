@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.f5f665d1.css",
-    "main.js": "/my-portfolio/static/js/main.3103d8b3.js",
+    "main.js": "/my-portfolio/static/js/main.000a8076.js",
     "static/js/453.b21437c2.chunk.js": "/my-portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/project-img3.png": "/my-portfolio/static/media/project-img3.4a3564500de2698cfd36.png",
-    "static/media/project-img1.png": "/my-portfolio/static/media/project-img1.7e16b81e481e1be3ee23.png",
+    "static/media/project-img1.png": "/my-portfolio/static/media/project-img1.2434160b70123c277924.png",
     "static/media/project-img4.png": "/my-portfolio/static/media/project-img4.a5c469491362effcc7f4.png",
     "static/media/header-img.svg": "/my-portfolio/static/media/header-img.07cc4126b9eb00658939b82835e26c6a.svg",
+    "static/media/project-img5.png": "/my-portfolio/static/media/project-img5.a8a68b311963966f352f.png",
     "static/media/Font-Bold.ttf": "/my-portfolio/static/media/Font-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/Font-Medium.ttf": "/my-portfolio/static/media/Font-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/Font-Book.ttf": "/my-portfolio/static/media/Font-Book.2b143fa4b734a3584043.ttf",
@@ -18,11 +19,11 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/contact-img.svg": "/my-portfolio/static/media/contact-img.4b2c1921c6f9c6bb199e431f1e2fcaaf.svg",
     "main.f5f665d1.css.map": "/my-portfolio/static/css/main.f5f665d1.css.map",
-    "main.3103d8b3.js.map": "/my-portfolio/static/js/main.3103d8b3.js.map",
+    "main.000a8076.js.map": "/my-portfolio/static/js/main.000a8076.js.map",
     "453.b21437c2.chunk.js.map": "/my-portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5f665d1.css",
-    "static/js/main.3103d8b3.js"
+    "static/js/main.000a8076.js"
   ]
 }
