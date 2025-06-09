@@ -15,8 +15,8 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Design 1 : Chez Olivanders',
-      description: 'Pour un ptit relooking!',
+      title: 'Design 1 : Magical Wands by Ollivanders',
+      description: 'Discover the wand that chooses you!',
       imgUrl: projImg1,
       path: 'https://johnd26.github.io/service-website/',
     },
