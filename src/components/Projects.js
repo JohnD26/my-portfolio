@@ -7,6 +7,7 @@ import projImg1 from '../assets/images/project-img1.png';
 import projImg2 from '../assets/images/project-img2.png';
 import projImg3 from '../assets/images/project-img3.png';
 import projImg4 from '../assets/images/project-img4.png';
+import projImg5 from '../assets/images/project-img5.png';
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -14,10 +15,10 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Design 1 : Chez le coiffeur',
+      title: 'Design 1 : Chez Olivanders',
       description: 'Pour un ptit relooking!',
       imgUrl: projImg1,
-      path: '/design1',
+      path: 'https://johnd26.github.io/service-website/',
     },
     {
       title: 'Design 2 : Jeu de Poker',
@@ -36,6 +37,12 @@ export const Projects = () => {
       description: 'Analyse & visualisation (football)',
       imgUrl: projImg4,
       path: '/design4',
+    },
+        {
+      title: 'Design 5 : AI-Code Roaster',
+      description: 'I believe humor makes complex work better: This is precisely why I built an AI assistant that delivers code critiques with a humorous twist—because even serious debugging can (and should) be fun. 😉',
+      imgUrl: projImg5,
+      path: 'https://code-roaster.onrender.com/',
     },
   ];
 
@@ -65,6 +72,7 @@ export const Projects = () => {
                         <Row>
                           {projects.map((project, idx) => (
                             <Col xs={12} sm={6} md={4} key={idx} className="mb-4">
+                              {project.path.startsWith('/') ? (
                               <Link to={project.path} className="proj-link">
                                 <ProjectCard
                                   title={project.title}
@@ -72,6 +80,16 @@ export const Projects = () => {
                                   imgUrl={project.imgUrl}
                                 />
                               </Link>
+                            ) : (
+                              <a href={project.path} className="proj-link" target="_blank" rel="noopener noreferrer">
+                                <ProjectCard
+                                  title={project.title}
+                                  description={project.description}
+                                  imgUrl={project.imgUrl}
+                                />
+                              </a>
+                            )}
+
                             </Col>
                           ))}
                         </Row>
