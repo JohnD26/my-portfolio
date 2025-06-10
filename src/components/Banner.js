@@ -172,7 +172,8 @@ export const Banner = () => {
                   <p>
                     Here you’ll find four links to upcoming design projects, each representing a different type of website:
                     a service platform, a gaming site, an e-commerce site, and a data analysis/visualization dashboard.
-                    Designs 1 and 5 are already completed, while the others contain placeholder content and will be developed further throughout the semester.
+                    Designs 1 and 5 are already completed. Please note that Design 1 is currently in French, as I’m taking this 
+                    course in French. An English version will be added after the first deliverable is evaluated. The remaining projects contain placeholder content and will be developed further throughout the semester.
                   </p>
 
                 </div>
