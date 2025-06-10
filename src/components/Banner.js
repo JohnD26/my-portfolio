@@ -97,9 +97,9 @@ export const Banner = () => {
   const [index, setIndex]           = useState(1);
 
   const toRotate = [
-    "Web Design",
-    "UI/UX Design",
-    "AI Engineer on the side"
+    "UI Design",
+    "UX Design",
+    "Web development"
   ];
   const period = 2000;
 
@@ -151,29 +151,28 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   
-                  <span className="tagline">Bienvenue sur mon portfolio</span>
+                  <span className="tagline">Welcome to my Portfolio</span>
                   
                   <h1>
-                    {`Salut ! Je m'appelle Jonathan j'apprend le `}{" "}
+                    {`Hi! My name is Jonathan. I'm learning  `}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                      data-rotate='["UI Design", "UX Design", "Web Development" , "Human-Computer Interaction"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   
                   <p>
-                    Je suis étudiant en Data Science à l’Université d’Ottawa et je suis en train d’apprendre le design d’interfaces utilisateur.
-                    Ce portfolio est une vitrine de mon parcours dans ce cours. J'explore HTML, CSS, Bootstrap, et les bases de la
-                    communication visuelle à travers plusieurs projets pratiques.
+                    I'm a Math/CS student at the University of Ottawa, currently enrolled in a UI/UX Design course.
+                    This portfolio showcases my journey in User-centered web design, featuring hands-on projects where I explore the fundamentals of Human Computer Interaction using JavaScript, React, Bootstrap, and CSS.
                   </p>
 
                   <p>
-                    Vous trouverez ici quatre liens vers des projets de design à venir, chacun représentant un type différent de site :
-                    services, jeux, commerce électronique, et analyse/visualisation. Ces pages contiennent des descriptions
-                    provisoires et seront enrichies au fil du semestre.
+                    Here you’ll find four links to upcoming design projects, each representing a different type of website:
+                    a service platform, a gaming site, an e-commerce site, and a data analysis/visualization dashboard.
+                    Designs 1 and 5 are already completed, while the others contain placeholder content and will be developed further throughout the semester.
                   </p>
 
                 </div>
