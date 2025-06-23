@@ -20,12 +20,12 @@ export const Projects = () => {
       imgUrl: projImg1,
       path: 'https://johnd26.github.io/service-website/',
     },
-    {
-      title: 'Design 2 : Jeu de Poker',
-      description: 'Emmenez beaucoup d argent!',
-      imgUrl: projImg2,
-      path: '/design2',
-    },
+     {
+      title: 'Design 2 : Tales of Wizards and Familiars',
+      description: 'Unleash magical battles in this wizard-powered, Pokémon-style game! Command your familiars, outsmart rivals, and brace for trash talk fueled by the Mistral LLM API. Bring your gold—this duel gets intense!',
+       imgUrl: projImg2,
+       path: 'https://johnd26.github.io/wizards-and-familiars/',
+     },
     {
       title: 'Design 3 : Big Bucks',
       description: 'Un site e-commerce',
