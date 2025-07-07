@@ -27,10 +27,10 @@ export const Projects = () => {
        path: 'https://johnd26.github.io/wizards-and-familiars/',
      },
     {
-      title: 'Design 3 : Big Bucks',
-      description: 'Un site e-commerce',
+      title: 'Design 3 : CityDrip',
+      description: 'Faites le plein de vetements pour cet été!',
       imgUrl: projImg3,
-      path: '/design3',
+      path: 'https://peppy-ganache-ca2c31.netlify.app/',
     },
     {
       title: 'Design 4 : Lock In',
