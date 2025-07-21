@@ -33,10 +33,10 @@ export const Projects = () => {
       path: 'https://peppy-ganache-ca2c31.netlify.app/',
     },
     {
-      title: 'Design 4 : Lock In',
-      description: 'Analyse & visualisation (football)',
+      title: 'Design 4 : Temperature-Tracker',
+      description: 'Analyse & visualisation de Temperature aucours des années',
       imgUrl: projImg4,
-      path: '/design4',
+      path: 'https://johnd26.github.io/temperature-dashboard/',
     },
         {
       title: 'Design 5 : AI-Code Roaster',
