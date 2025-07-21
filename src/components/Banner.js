@@ -166,16 +166,15 @@ export const Banner = () => {
                   
                   <p>
                     I'm a Math/CS student at the University of Ottawa, currently enrolled in a UI/UX Design course.
-                    This portfolio showcases my journey in User-centered web design, featuring hands-on projects where I explore the fundamentals of Human Computer Interaction using JavaScript, React, Bootstrap, and CSS.
+                    This portfolio showcases my journey in User-centered web design (Completed in summer of 2025), featuring hands-on projects where I explore the fundamentals of Human Computer Interaction using JavaScript, React, Bootstrap, and CSS.
                   </p>
 
                   <p>
-                    Here you’ll find four links to upcoming design projects, each representing a different type of website:
+                    Here you’ll find four links to my completed design projects, each representing a different type of website:
                     a service platform, a gaming site, an e-commerce site, and a data analysis/visualization dashboard.
                    </p>
                   <p>
-                    Designs 1 and 5 are already completed. Please note that Design 1 is currently in French, as I’m taking this 
-                    course in French. An English version will be added after the first deliverable is evaluated. The remaining projects contain placeholder content and will be developed further throughout the semester.
+                    Designs 1- 5 are now completed! Please note that Design 1 is currently in French. An English version will be added shortly.
                   </p>
 
                 </div>
